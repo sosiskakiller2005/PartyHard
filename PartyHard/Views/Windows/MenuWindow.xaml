@@ -1,0 +1,18 @@
+﻿<Window x:Class="PartyHard.Views.Windows.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PartyHard.Views.Windows"
+        mc:Ignorable="d"
+        Title="PartyHard" Height="500" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".15*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Image Source="/Resources/logo.jpg" Margin="10 0 0 0" HorizontalAlignment="Left"/>
+        <Frame Name="MainFrm" Grid.Row="2" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

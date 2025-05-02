@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="650b791694994ed3b73492e1991d0b72" Name="Diagram1">
+      <Diagram DiagramId="4aff51d44f22469a9e6d1e44e99006db" Name="Diagram1">
         <EntityTypeShape EntityType="PartyHardDbModel.Clients" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
         <EntityTypeShape EntityType="PartyHardDbModel.EventTypes" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
         <EntityTypeShape EntityType="PartyHardDbModel.Gender" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
         <EntityTypeShape EntityType="PartyHardDbModel.MasterClasses" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
         <EntityTypeShape EntityType="PartyHardDbModel.Orders" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="PartyHardDbModel.Services" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="PartyHardDbModel.Users" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PartyHardDbModel.Users" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
         <AssociationConnector Association="PartyHardDbModel.FK__Orders__ClientID__4E88ABD4" ManuallyRouted="false" />
         <AssociationConnector Association="PartyHardDbModel.FK__Orders__EventTyp__4F7CD00D" ManuallyRouted="false" />
         <AssociationConnector Association="PartyHardDbModel.FK__Users__GenderID__440B1D61" ManuallyRouted="false" />

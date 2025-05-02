@@ -4,18 +4,17 @@
         <Setter Property="FontSize" Value="25" />
         <Setter Property="Width" Value="240" />
         <Setter Property="Height" Value="40" />
-        <Setter Property="Foreground" Value="Black" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border Background="White" 
+                    <Border Background="#FF652C90" 
                             BorderBrush="Transparent"
                             BorderThickness="1" 
-                            CornerRadius="4" 
+                            CornerRadius="10" 
                             Padding="5">
                         <ContentPresenter HorizontalAlignment="Center" 
                                           VerticalAlignment="Center" 
-                                          TextElement.Foreground="Black"/>
+                                          TextElement.Foreground="White"/>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

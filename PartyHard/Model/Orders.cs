@@ -21,8 +21,8 @@ namespace PartyHard.Model
         public int MasterClassId { get; set; }
         public int UserId { get; set; }
         public System.DateTime OrderDate { get; set; }
-        public System.TimeSpan StartTime { get; set; }
-        public System.TimeSpan EndTime { get; set; }
+        public System.DateTime StartTime { get; set; }
+        public System.DateTime EndTime { get; set; }
         public string Address { get; set; }
         public string Notes { get; set; }
         public Nullable<int> Status { get; set; }

@@ -38,6 +38,9 @@
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="RoyT.TimePicker, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RoyT.TimePicker.0.5.0\lib\net45\RoyT.TimePicker.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -69,11 +72,6 @@
     <Compile Include="AppData\AuthorisationHelper.cs" />
     <Compile Include="AppData\FrameHelper.cs" />
     <Compile Include="AppData\MessageBoxHelper.cs" />
-    <Compile Include="Views\Windows\AuthorisationWindow.xaml.cs">
-      <DependentUpon>AuthorisationWindow.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Model\Clients.cs">
       <DependentUpon>PartyHardModel.tt</DependentUpon>
     </Compile>
@@ -110,6 +108,23 @@
     <Compile Include="Model\Users.cs">
       <DependentUpon>PartyHardModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\AddOrderPage.xaml.cs">
+      <DependentUpon>AddOrderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\AuthorisationWindow.xaml.cs">
+      <DependentUpon>AuthorisationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\MenuWindow.xaml.cs">
+      <DependentUpon>MenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\SignUpWindow.xaml.cs">
+      <DependentUpon>SignUpWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -144,22 +159,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Model\PartyHardModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>PartyHardModel.Context.cs</LastGenOutput>
       <DependentUpon>PartyHardModel.edmx</DependentUpon>
+      <LastGenOutput>PartyHardModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model\PartyHardModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>PartyHardModel.edmx</DependentUpon>
       <LastGenOutput>PartyHardModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Pages\" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Styles\ButtonStyle.xaml">
@@ -210,7 +225,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\Pages\AddOrderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\MenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Windows\AuthorisationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\MenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\SignUpWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

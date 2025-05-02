@@ -2,7 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style TargetType="TextBlock">
         <Setter Property="FontSize" Value="22" />
-        <Setter Property="Foreground" Value="White" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="HorizontalAlignment" Value="Center" />
         <Setter Property="FontWeight" Value="SemiBold" />

@@ -22,10 +22,10 @@ namespace PartyHard.Model
         public int Id { get; set; }
         public string FullName { get; set; }
         public string NumberPhone { get; set; }
-        public string Birthday { get; set; }
+        public System.DateTime Birthday { get; set; }
+        public string Login { get; set; }
         public string Password { get; set; }
         public int GenderId { get; set; }
-        public string Login { get; set; }
     
         public virtual Gender Gender { get; set; }
         public virtual ICollection<Orders> Orders { get; set; }

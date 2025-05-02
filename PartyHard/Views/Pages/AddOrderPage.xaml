@@ -1,0 +1,118 @@
+﻿<Page x:Class="PartyHard.Views.Pages.AddOrderPage"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+     xmlns:tp="clr-namespace:RoyT.TimePicker;assembly=RoyT.TimePicker"
+     xmlns:local="clr-namespace:PartyHard.Views.Pages"
+     mc:Ignorable="d" 
+     d:DesignHeight="450" d:DesignWidth="1000"
+     Title="AddOrderPage">
+
+    <Grid Margin="10">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Добавление заказа"/>
+                
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Клиент:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                                <Border Width="20"/>
+                                <ComboBox Name="ClientCmb" />
+                            </StackPanel>
+                            <TextBlock><Hyperlink Name="AddClientHL" Click="AddClientHL_Click">Добавить клиента</Hyperlink></TextBlock>
+                        </StackPanel>
+                        <Border Height="20"/>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Тип мероприятия:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                                <Border Width="20"/>
+                                <ComboBox Name="EventTypeCmb" />
+                            </StackPanel>
+                        </StackPanel>
+                        <Border Height="20"/>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Услуга:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                                <Border Width="20"/>
+                                <ComboBox Name="ServiceCmb" />
+                            </StackPanel>
+                        </StackPanel>
+                        <Border Height="20"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="МастерКласс:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                            <Border Width="20"/>
+                            <ComboBox Name="MasterClassCmb" />
+                        </StackPanel>
+                        <Border Height="20"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Сотрудник:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                            <Border Width="20"/>
+                            <ComboBox Name="UserCmb" />
+                        </StackPanel>
+                        <Border Height="20"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Дата:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                            <Border Width="20"/>
+                            <DatePicker Name="DateDp" Width="220"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Начало:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                                <Border Width="20"/>
+                                <tp:TimePickerSlider Name="StartTime" Grid.Row="8"  Width="300"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <Border Height="20"/>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Конец:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                                <Border Width="20"/>
+                                <tp:TimePickerSlider Name="EndTime" Grid.Row="8"  Width="300"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <Border Height="20"/>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Услуга:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                                <Border Width="20"/>
+                                <TextBox Name="Adress"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <Border Height="20"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Комментарий:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                            <Border Width="20"/>
+                            <TextBox Name="NoteTb"/>
+                        </StackPanel>
+                        <Border Height="20"/>
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Name="AddBtn" Content="Добавить" Click="AddBtn_Click" Width="150"/>
+                            <Border Width="20"/>
+                            <Button Name="BackBtn" Content="Назад" Click="BackBtn_Click" Width="150"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                
+                
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

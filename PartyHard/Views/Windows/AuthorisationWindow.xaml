@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PartyHard.Views.Windows"
         mc:Ignorable="d"
-        Title="AuthorisationWindow" Height="500" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Окно авторизации" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <Image Source="/Resources/logo.jpg" Height="150"/>
+        <Border Height="20"/>
+        <TextBlock Text="Авторизация" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <Border Height="20"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="15 0 0 0">
+            <TextBlock Text="Логин:" HorizontalAlignment="Right"/>
+            <Border Width="20"/>
+            <TextBox Name="LoginTb"/>
+        </StackPanel>
+        <Border Height="20"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Text="Пароль:" HorizontalAlignment="Left"/>
+            <Border Width="20"/>
+            <PasswordBox Name="PasswordTb"/>
+        </StackPanel>
+
+        <Border Height="20"/>
+        <Button Name="SignInBtn" Content="Войти" Click="SignInBtn_Click"/>
+        <Border Height="10"/>
+        <TextBlock>
+            <Hyperlink Name="SignUpBtn" Click="SignUpBtn_Click">Зарегистрироваться</Hyperlink>
+        </TextBlock>
+
+    </StackPanel>
 </Window>

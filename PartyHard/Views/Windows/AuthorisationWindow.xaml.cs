@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PartyHard.AppData;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,26 @@ namespace PartyHard.Views.Windows
         public AuthorisationWindow()
         {
             InitializeComponent();
+        }
+
+        private void SignInBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(LoginTb.Text) && !string.IsNullOrEmpty(PasswordTb.Password))
+            {
+                if (AuthorisationHelper.Authorise(LoginTb.Text, PasswordTb.Password))
+                {
+                    MenuWindow menuWindow = new MenuWindow();
+                    menuWindow.Show();
+                    Close();
+                }
+            }
+        }
+
+        private void SignUpBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SignUpWindow signUpWindow = new SignUpWindow();
+            signUpWindow.Show();
+            Close();
         }
     }
 }
