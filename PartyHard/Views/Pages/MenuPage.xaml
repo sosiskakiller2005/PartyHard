@@ -10,5 +10,7 @@
 
     <StackPanel VerticalAlignment="Center">
         <Button Name="AddOrderBtn" Content="Сделать заказ" Click="AddOrderBtn_Click"/>
+        <Border Height="20"/>
+        <Button Name="OrdersBtn" Content="Просмотр заказов" Click="OrdersBtn_Click"/>
     </StackPanel>
 </Page>

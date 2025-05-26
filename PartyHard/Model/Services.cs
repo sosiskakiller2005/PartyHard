@@ -22,6 +22,7 @@ namespace PartyHard.Model
         public int Id { get; set; }
         public string ServiceName { get; set; }
         public string Descriptions { get; set; }
+        public Nullable<decimal> Amount { get; set; }
     
         public virtual ICollection<Orders> Orders { get; set; }
     }

@@ -6,18 +6,18 @@
      xmlns:tp="clr-namespace:RoyT.TimePicker;assembly=RoyT.TimePicker"
      xmlns:local="clr-namespace:PartyHard.Views.Pages"
      mc:Ignorable="d" 
-     d:DesignHeight="450" d:DesignWidth="1000"
+     d:DesignHeight="600" d:DesignWidth="1000"
      Title="AddOrderPage">
 
     <Grid Margin="10">
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height=".1*" />
+                    <RowDefinition Height=".15*" />
                     <RowDefinition Height="1*" />
                 </Grid.RowDefinitions>
 
-                <TextBlock Text="Добавление заказа"/>
+                <TextBlock Text="Добавление заказа" FontSize="25" FontWeight="Bold"/>
                 
                 <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
@@ -90,7 +90,7 @@
                         <Border Height="20"/>
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Услуга:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
+                                <TextBlock Text="Адрес:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="150"/>
                                 <Border Width="20"/>
                                 <TextBox Name="Adress"/>
                             </StackPanel>

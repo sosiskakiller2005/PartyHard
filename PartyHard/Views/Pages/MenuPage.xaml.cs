@@ -30,5 +30,10 @@ namespace PartyHard.Views.Pages
         {
             FrameHelper.selectedFrame.Navigate(new AddOrderPage());
         }
+
+        private void OrdersBtn_Click(object sender, RoutedEventArgs e)
+        {
+            FrameHelper.selectedFrame.Navigate(new OrdersPage());
+        }
     }
 }
