@@ -1,4 +1,5 @@
 ﻿using PartyHard.AppData;
+using PartyHard.Views.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,25 @@ namespace PartyHard.Views.Pages
         private void OrdersBtn_Click(object sender, RoutedEventArgs e)
         {
             FrameHelper.selectedFrame.Navigate(new OrdersPage());
+        }
+
+        private void CloseBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AuthorisationWindow authorisationWindow = new AuthorisationWindow();
+            authorisationWindow.Show();
+            Window.GetWindow(this).Close();
+        }
+
+        private void AddMasterClassBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AddMasterClassWindow addMasterClassWindow = new AddMasterClassWindow();
+            addMasterClassWindow.ShowDialog();
+        }
+
+        private void AddServiceBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AddServiceWindow addServiceWindow = new AddServiceWindow();
+            addServiceWindow.ShowDialog();
         }
     }
 }

@@ -120,6 +120,12 @@
     <Compile Include="Views\Windows\AddCLientWindow.xaml.cs">
       <DependentUpon>AddCLientWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Windows\AddMasterClassWindow.xaml.cs">
+      <DependentUpon>AddMasterClassWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\AddServiceWindow.xaml.cs">
+      <DependentUpon>AddServiceWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\AuthorisationWindow.xaml.cs">
       <DependentUpon>AuthorisationWindow.xaml</DependentUpon>
     </Compile>
@@ -244,6 +250,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\AddCLientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\AddMasterClassWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\AddServiceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

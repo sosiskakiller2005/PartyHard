@@ -12,5 +12,16 @@
         <Button Name="AddOrderBtn" Content="Сделать заказ" Click="AddOrderBtn_Click"/>
         <Border Height="20"/>
         <Button Name="OrdersBtn" Content="Просмотр заказов" Click="OrdersBtn_Click"/>
+        <Border Height="20"/>
+        <Button Name="AddMasterClassBtn" Click="AddMasterClassBtn_Click">
+            <Button.Content>
+                <TextBlock Text="Добавить мастеркласс" Foreground="White" FontSize="20"/>
+            </Button.Content>
+        </Button>
+        <Border Height="20"/>
+        <Button Name="AddServiceBtn" Content="Добавить услугу" Click="AddServiceBtn_Click"/>
+        <Border Height="20"/>
+        <Button Name="CloseBtn" Content="Выйти" Click="CloseBtn_Click"/>
+        <Border Height="20"/>
     </StackPanel>
 </Page>

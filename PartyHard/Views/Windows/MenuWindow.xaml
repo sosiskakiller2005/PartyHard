@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PartyHard.Views.Windows"
         mc:Ignorable="d"
-        Title="PartyHard" Height="600" Width="1000">
+        Title="PartyHard" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height=".15*" />
