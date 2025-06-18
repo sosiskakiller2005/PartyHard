@@ -37,6 +37,8 @@
                             <GridViewColumn Header="Услуга" DisplayMemberBinding="{Binding Services.ServiceName}"/>
                             <GridViewColumn Header="МастерКласс" DisplayMemberBinding="{Binding MasterClasses.MasterClassName}"/>
                             <GridViewColumn Header="Дата и время" DisplayMemberBinding="{Binding OrderDate, StringFormat={}{0:dd.MM.yyy hh:mm}}"/>
+                            <GridViewColumn Header="Адрес" DisplayMemberBinding="{Binding Address}"/>
+                            <GridViewColumn Header="Комментарий" DisplayMemberBinding="{Binding Notes}"/>
                         </GridView>
                     </ListView.View>
                 </ListView>
